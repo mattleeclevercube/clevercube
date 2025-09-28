@@ -1,0 +1,16 @@
+{
+  "name": "CleverCube",
+  "short_name": "CleverCube",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#282c34",
+  "theme_color": "#61afef",
+  "description": "A PWA that solves a 3x3x3 polycube packing problem using DLX.",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

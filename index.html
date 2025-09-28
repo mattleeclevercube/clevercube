@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleverCube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#333">
+</head>
+<body>
+    <div id="main-container">
+        <h1>CleverCube</h1>
+        
+        <div id="piece-selector-container">
+            </div>
+
+        <button id="solve-button">Solve</button>
+        <button id="reset-button">Reset</button>
+
+        <div id="status">Select your pieces and press "Solve".</div>
+
+        <div id="canvas-container"></div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(reg => console.log('Service worker registered.'))
+                    .catch(err => console.log('Service worker registration failed: ', err));
+            });
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
