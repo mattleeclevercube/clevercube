@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'L': { volume: 4, color: 0x00A0B0, shape: [[0,0,0], [1,0,0], [2,0,0], [0,1,0]] },
         'T': { volume: 4, color: 0x6A4A3C, shape: [[0,0,0], [1,0,0], [2,0,0], [1,1,0]] },
         'Z': { volume: 4, color: 0xCC333F, shape: [[0,0,0], [1,0,0], [1,1,0], [2,1,0]] },
-        'S': { volume: 4, color: 0xEB6841, shape: [[0,0,0], [0,1,0], [1,1,0], [0,0,1]] },
+        'S': { volume: 4, color: 0xEB6841, shape: [[0,0,0], [1,0,0], [1,1,0], [0,0,1]] },
         'A': { volume: 3, color: 0xffffff, shape: [[0,0,0], [1,0,0], [0,1,0]] },
         'B': { volume: 4, color: 0x8BC34A, shape: [[0,0,0], [1,0,0], [0,1,0], [0,0,1]] },
-        'P': { volume: 4, color: 0x955251, shape: [[0,0,0], [1,0,0], [1,1,0], [0,0,1]] }
+        'P': { volume: 4, color: 0x955251, shape: [[0,0,0], [0,1,0], [1,1,0], [0,0,1]] }
     };
 
     // --- INITIALIZATION ---
